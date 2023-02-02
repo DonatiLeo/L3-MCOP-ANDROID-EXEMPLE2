@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button button = (Button) findViewById(R.id.button);
+
         /*
         button.setOnClickListener( new OnClickListener() {
             @Override
@@ -22,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
                 Button b = (Button) v;
                 b.setText("Merci ici aussi !");
             }
-        });*/
+        });
+        */
         button.setOnClickListener(
                 e -> Toast.makeText(this, "Merci Leo", Toast.LENGTH_SHORT).show()
         );
